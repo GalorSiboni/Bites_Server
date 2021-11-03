@@ -2,9 +2,9 @@
   "name": "bites_server",
   "version": "1.0.0",
   "description": "",
-  "main": "Server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon index.js"
   },
   "author": "Galor Siboni",
   "license": "ISC",

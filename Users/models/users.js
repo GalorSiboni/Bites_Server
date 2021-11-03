@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const types = require('./type/user')
 const Schema = mongoose.Schema;
 
 const usersSchema = new Schema({
@@ -7,6 +8,7 @@ const usersSchema = new Schema({
     username: { type: String, required: true },
     password: { type: String, required: true },
     email: { type: String, required: true },
+    usertype: { type: types.user , default: types.user.CUSTOMER},
     address: { type: mongoose.Schema.Types.ObjectId, ref: 'Address' }
 }, { timestamps: true })
 

@@ -8,7 +8,7 @@ const ordersSchema = new Schema({
     products: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Products' }],
     total_price: { type: Number, default: 0.0 },
     address: { type: mongoose.Schema.Types.ObjectId, ref: 'Address' },
-    order_type: { type: rderType.order, default: orderType.order.SHIPMENT }
+    order_type: { type: orderType.order, default: orderType.order.SHIPMENT }
 }, { timestamps: true })
 
 const Orders = mongoose.model('Orders', ordersSchema);

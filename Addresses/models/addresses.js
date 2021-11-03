@@ -10,5 +10,5 @@ const addressesSchema = new Schema({
     floor: { type: String, required: true }
 }, { timestamps: true })
 
-const Addresses = mongoose.model('Addreses', addressesSchema);
+const Addresses = mongoose.model('Addresses', addressesSchema);
 module.exports = Addresses;
