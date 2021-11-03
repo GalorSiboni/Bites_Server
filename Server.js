@@ -7,7 +7,6 @@ const Product = require('./Categories/models/categories')
 const app = express()
 
 // connect to mongodb
-const dbURI = 'mongodb+srv://GalorSiboni:Galax1c565@bites.lvofh.mongodb.net/bites?retryWrites=true&w=majority'
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => {
         console.log('connected to db');
