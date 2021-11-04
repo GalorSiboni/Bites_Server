@@ -8,7 +8,7 @@ const usersSchema = new Schema({
     username: { type: String, required: true },
     password: { type: String, required: true },
     email: { type: String, required: true },
-    usertype: { type: types.user , default: types.user.CUSTOMER},
+    usertype: { type: String , default: types.CUSTOMER},
     address: { type: mongoose.Schema.Types.ObjectId, ref: 'Address' }
 }, { timestamps: true })
 

@@ -17,7 +17,7 @@ const getUserById = async (req, res) => {
 }
 
 const createUser = async (req, res) => {
-    const user = new userModule({
+    const user = new usersModule({
         _id: mongoose.Types.ObjectId(),
         name: req.body.name,
         username: req.body.username,
@@ -76,7 +76,7 @@ const deleteUser = async (req, res) => {
 
 const deleteAllUsers = async (req, res) => {
     try{
-        await userModule.deleteMany({})
+        await usersModule.deleteMany({})
         res.status(200).json({ messege: 'Deleted All Users' })
     }
     catch(error){

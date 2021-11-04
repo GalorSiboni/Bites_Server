@@ -1,5 +1,5 @@
-export const user = {
+module.exports = Object.freeze({
     CUSTOMER: "לקוח",
     ADMIN: "מנהל",
     DEVELOPER: "מפתח"
-}
+})

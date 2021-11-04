@@ -23,7 +23,7 @@ const createProduct = async (req, res) => {
         price: req.body.price,
         image: req.body.image,
         description: req.body.description,
-        category: req.body.category
+        categories: req.body.categories
     })
     try{
         const newProduct = await product.save()
